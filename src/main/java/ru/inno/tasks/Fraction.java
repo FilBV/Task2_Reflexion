@@ -7,6 +7,7 @@ public class Fraction implements Fractionable {
         this.num = num;
         this.denum = denum;
     }
+
     @Mutator
     public void setNum(int num) {
         this.num = num;
@@ -20,7 +21,6 @@ public class Fraction implements Fractionable {
     @Override
     @Cache
     public double doubleValue() {
-        System.out.print("Invoke ");
         return (double) num / denum;
     }
 
