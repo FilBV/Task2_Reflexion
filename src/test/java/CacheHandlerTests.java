@@ -10,7 +10,7 @@ public class CacheHandlerTests {
 
     @Test
     @DisplayName("methods without annotation")
-    public void testNoAnnotationMethods() {
+    public void testNoAnnotation() {
         fraction2.toString();
         fraction2.toString();
         fraction2.toString();
@@ -18,8 +18,8 @@ public class CacheHandlerTests {
     }
 
     @Test
-    @DisplayName("methods with annotation dont clear cache")
-    public void testCachNoClear() {
+    @DisplayName("Methods with annotation without clearing cache")
+    public void testCacheNoClear() {
         fraction2.doubleValue();
         fraction2.doubleValue();
         fraction2.toString();
@@ -27,8 +27,8 @@ public class CacheHandlerTests {
         Assertions.assertEquals(fraction.count, 2);
     }
     @Test
-    @DisplayName("methods with annotation clear cache")
-    public void testCachClear() {
+    @DisplayName("Methods with annotation and cache clearing")
+    public void testCacheClear() {
         fraction2.doubleValue();
         fraction2.setDenum(5);
         fraction2.toString();
