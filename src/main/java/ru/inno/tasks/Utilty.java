@@ -2,7 +2,7 @@ package ru.inno.tasks;
 
 import java.lang.reflect.Proxy;
 
-public class Utils {
+public class Utilty {
     public static <T> T cache(T objectIncome) {
 
          return (T) Proxy.newProxyInstance(

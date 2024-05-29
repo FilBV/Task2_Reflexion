@@ -1,12 +1,12 @@
 
 import org.junit.jupiter.api.*;
 import ru.inno.tasks.Fractionable;
-import ru.inno.tasks.Utils;
+import ru.inno.tasks.Utilty;
 
 public class CacheHandlerTests {
 
     TestFraction testFraction = new TestFraction(1, 4);
-    Fractionable fraction = Utils.cache(testFraction);
+    Fractionable fraction = Utilty.cache(testFraction);
 
     @Test
     @DisplayName("Methods without annotation")
