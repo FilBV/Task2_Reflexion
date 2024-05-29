@@ -4,7 +4,7 @@ import ru.inno.tasks.Mutator;
 
 
 public class TestFraction implements Fractionable {
-    int num,denum;
+    int num, denum;
     int count;
 
     public TestFraction(int num, int denum) {
@@ -16,17 +16,20 @@ public class TestFraction implements Fractionable {
     @Cache
     public double doubleValue() {
         count++;
-        return num/denum;
+        return num / denum;
     }
+
     @Override
     @Mutator
+
     public void setNum(int num) {
-        this.num=num;
+        this.num = num;
     }
+
     @Override
     @Mutator
     public void setDenum(int denum) {
-        this.denum=denum;
+        this.denum = denum;
     }
 
     @Override
